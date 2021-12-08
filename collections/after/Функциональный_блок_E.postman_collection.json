@@ -1,0 +1,1065 @@
+{
+	"info": {
+		"_postman_id": "b28af671-21cc-4b19-8ab7-9f2b81c31cac",
+		"name": "Функциональный_блок_E",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Фича_A",
+			"item": [
+				{
+					"name": "124448__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124450__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124452__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124454__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124456__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124458__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124460__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Фича_B",
+			"item": [
+				{
+					"name": "124462__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124464__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124466__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124468__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124470__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124472__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124474__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Фича_C",
+			"item": [
+				{
+					"name": "124476__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124478__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124480__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124482__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124484__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124486__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124488__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Фича_D",
+			"item": [
+				{
+					"name": "124490__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124492__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124494__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124496__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124498__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124500__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124502__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Фича_E",
+			"item": [
+				{
+					"name": "124504__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124506__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124508__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124510__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124512__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124514__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124516__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Фича_F",
+			"item": [
+				{
+					"name": "124518__Тест_кейс_A",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124520__Тест_кейс_B",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124522__Тест_кейс_C",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124524__Тест_кейс_D",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124526__Тест_кейс_E",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124528__Тест_кейс_F",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "124530__Негативный_тест_кейс",
+					"item": [
+						{
+							"name": "Verify_start_page_is_accessible",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Продаю Гараж\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								},
+								"description": "<br>Use case\r\n<br>User sets section internal (guid format) identifier\r\n<br>User runs method execution\r\n<br>System search section by the section identifier\r\n<br>System returns section"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

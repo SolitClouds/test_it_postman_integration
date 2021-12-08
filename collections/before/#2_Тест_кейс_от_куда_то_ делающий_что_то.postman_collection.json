@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e36a21b0-e93f-403e-bd4d-bd0992d45038",
+		"name": "#2_Тест_кейс_от_куда_то_ делающий_что_то",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Послать запрос",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Послать второй запрос",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Опциональный шаг, надо знать когда запускать 0_o",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

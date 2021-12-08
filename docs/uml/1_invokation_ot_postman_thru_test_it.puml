@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam backgroundColor #ffffff
+
+
+skinparam sequence {
+ArrowColor black
+ActorBorderColor DeepSkyBlue
+ArrowFontName Tahoma
+
+LifeLineBorderColor black
+LifeLineBackgroundColor #ffffff
+
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DeepSkyBlue
+ParticipantFontName Tahoma
+ParticipantFontSize 17
+ParticipantFontColor #ffffff
+
+}
+
+autonumber
+group 1. Запуск кейсов
+Test_IT -> Jenkins: Отправляет запрос на запуск автотестов из тест плана
+Jenkins -> Test_IT: Запрашивает id тест кейсов которые небходимо запустить
+Test_IT -> Jenkins: Отправляет ответ с id тест кейсов
+Jenkins -> Tests_executor: Выполняет команду на запуск определённого кейса по id
+end
+@enduml

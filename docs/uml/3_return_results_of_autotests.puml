@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam sequence {
+ArrowColor black
+ActorBorderColor DeepSkyBlue
+ArrowFontName Tahoma
+
+LifeLineBorderColor black
+LifeLineBackgroundColor #ffffff
+
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DeepSkyBlue
+ParticipantFontName Tahoma
+ParticipantFontSize 17
+ParticipantFontColor #ffffff
+
+}
+
+autonumber
+group 1. Парсинг коллекций
+QA -> Git: Публикует коллекции
+Git -> Jenkins: Вызывает запуск джобы
+Jenkins -> Collection_Parser: Вызывает скрипт парсинга
+Collection_Parser -> Collection_Parser : Парсит коллекции
+Collection_Parser->Git: Публикует коллекции из одного кейса
+end
+... **Через какое-то время** ...
+group 2. Запуск кейсов
+QA-> Test_IT: Запускает тест план с кейсами
+Test_IT -> Jenkins: Отправляет запрос на запуск автотестов из тест плана
+Jenkins -> Test_IT: Запрашивает id тест кейсов которые небходимо запустить
+Test_IT -> Jenkins: Отправляет ответ с id тест кейсов
+Jenkins -> Tests_executor: Выполняет команду на запуск определённого кейса по id
+end
+group 3. Отправка отчёта
+Tests_executor -> Report: Сохраняет результаты выполнения кейсов
+Jenkins -> Report : Забирает отчёт о прохождении
+Jenkins -> Test_IT: Отправляет результаты в Test_IT
+end
+@enduml
