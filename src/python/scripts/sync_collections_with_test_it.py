@@ -8,7 +8,7 @@ from test_it_methods import create_work_item, update_work_item, create_section, 
     root_section_id, create_autotest, link_autotest_to_work_item, update_autotest, get_headers_with_auth, \
     get_sections, log_message
 
-collections_path = "full path to test_it_postman_integration\\collections\\after"
+collections_path = 
 root_section_id = 
 test_it_base_url = 
 project_id = 

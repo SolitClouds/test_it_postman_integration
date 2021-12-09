@@ -22,13 +22,6 @@ def log_message(url, response):
 
 
 def create_work_item(name, steps_dict, section_id):
-    """
-    Метод создаёт новый тест-кейс в TestIT
-    :param name: имя кейса
-    :param steps_dict: шаги кейса:
-    :param section_id: uuid секции, в которую будет добавлен кейс
-    :return: globalId созданного кейса
-    """
     url = '{}/workItems'.format(base_url)
     body = {
         "attributes": {},
@@ -180,7 +173,6 @@ def delete_autotest_by_global_id(global_id):
 
 
 def delete_all_autotests_in_project():
-    """Для ручного запуска удаления всех тестов"""
     autotests = get_all_autotests_in_project()
     for autotest in autotests:
         global_id = autotest.get('globalId')
@@ -188,14 +180,6 @@ def delete_all_autotests_in_project():
 
 
 def set_test_result(external_id, status, traces):
-    """
-    Метод устанавливает результат теста
-    :param test_run_id: id тест-рана
-    :param configuration_id: UiID конфигурации
-    :param external_id: id кейса
-    :param status: результат теста
-    :return: globalId созданного кейса
-    """
     url = '{}/testRuns/{}/testResults'.format(base_url, test_run_id)
     body = [
         {
@@ -211,4 +195,4 @@ def set_test_result(external_id, status, traces):
     response = requests.post(url=url, json=body,
                              headers=get_headers_with_auth({'Content-Type': 'application/json'}))
     assert response.status_code == 200, log_message(url, response)
-# return response.json()['globalId']
+

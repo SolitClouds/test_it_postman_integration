@@ -2,8 +2,8 @@ import json
 import uuid
 from pathlib import Path
 
-source_path = "full path to \\test_it_postman_integration\\collections\\after"
-target_path = "full path to \\test_it_postman_integration\\collections\\parsed"
+source_path = "path to folder with source collections"
+target_path = "path to output folder"
 
 
 def generate_separate_collection(collection, base_scenario):
