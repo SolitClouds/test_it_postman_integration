@@ -7,7 +7,8 @@ Provided scripts could be used with collections of following structure, where th
 Other levels of folder will represent section in Test IT
 PLease note that the scripts were debuged only on structure with two levels of sections
 
-![image](https://user-images.githubusercontent.com/89986347/145207266-8bcb1f9c-81fa-41dc-8ef4-16850f46cdbd.png)
+![image](https://user-images.githubusercontent.com/89986347/145394023-bc5734a6-004d-4a82-adfe-96c243d97aab.png)
+
 
 For reporting please use also https://www.npmjs.com/package/json-summary 
 
