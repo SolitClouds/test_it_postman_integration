@@ -3,15 +3,18 @@ import os
 from glob import glob
 import json
 import requests
+import configparser
 
 from test_it_methods import create_work_item, update_work_item, create_section, \
     root_section_id, create_autotest, link_autotest_to_work_item, update_autotest, get_headers_with_auth, \
     get_sections, log_message
 
-collections_path = 
-root_section_id = 
-test_it_base_url = 
-project_id = 
+config = configparser.ConfigParser()
+config.read('config.ini')
+collections_path = config.get('CollectionsParams', 'path_with_collections')
+root_section_id = config.get('TmsParams', 'root_section_id')
+test_it_base_url = config.get('TmsParams', 'test_it_base_url')
+project_id = config.get('TmsParams', 'project_id')
 
 
 def main():

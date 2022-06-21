@@ -8,8 +8,6 @@ from test_it_methods import set_test_result
 
 def find_failures(json_obj):
     count_of_failures = int(json_obj['Run']['Stats']['Assertions']['failed'])
-    # count_of_failures = int(json_obj['Run']['Stats']['Requests']['failed']) + \
-    #                     int(json_obj['Run']['Stats']['Assertions']['failed'])
     failures_list = json_obj['Run']['Failures']
     failures_list_of_assertions = []
     failures_list_of_another_errors = []

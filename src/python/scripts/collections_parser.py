@@ -1,10 +1,7 @@
 import json
 import uuid
 from pathlib import Path
-
-source_path = "path to folder with source collections"
-target_path = "path to output folder"
-
+import configparser
 
 def generate_separate_collection(collection, base_scenario):
     """
@@ -38,7 +35,10 @@ def save_collection_to_file(col, output_file):
 
 if __name__ == '__main__':
 
-    paths_to_collections = list(Path(source_path).glob('*.json'))
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+
+    paths_to_collections = list(Path(config.get('CollectionsParams', 'path_with_collections')).glob('*.json'))
 
     for path in paths_to_collections:
         with open(path, encoding='utf-8') as json_file:
@@ -61,5 +61,5 @@ if __name__ == '__main__':
                 result_scenario.get('item')[0].get('item').append(case)
                 result_collection = generate_separate_collection(source_collection, result_scenario)
 
-                result_file = Path(target_path).joinpath(f'{case_id}.postman_collection.json')
+                result_file = Path(config.get('CollectionsParams', 'path_for_single_collections')).joinpath(f'{case_id}.postman_collection.json')
                 save_collection_to_file(result_collection, result_file.as_posix())
