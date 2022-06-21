@@ -1,5 +1,4 @@
 import sys
-import os
 from glob import glob
 import json
 import requests
@@ -56,6 +55,7 @@ def main():
 
 
 def create_section(name, parent_section_id):
+
     url = '{}/sections'.format(test_it_base_url)
     body = {
         "name": name,

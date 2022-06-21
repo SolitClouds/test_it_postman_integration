@@ -1,14 +1,16 @@
 import json
 
 import requests
-import os
+import configparser
 
-base_url = os.getenv('base_url')
-auth = {'Authorization': 'PrivateToken {}'.format(os.getenv('token'))}
-project_id = os.getenv('project_id')
-root_section_id = os.getenv('root_section_id')
-test_run_id = os.getenv('test_run_id')
-configuration_id = os.getenv('configuration_id')
+config = configparser.ConfigParser()
+config.read('config.ini')
+base_url = config.get('TmsParams', 'test_it_base_url')
+auth = {'Authorization': 'PrivateToken {}'.format(config.get('TmsParams', 'token'))}
+project_id = config.get('TmsParams', 'project_id')
+test_run_id = config.get('TmsParams', 'test_run_id')
+configuration_id = config.get('TmsParams', 'configuration_id')
+root_section_id = config.get('TmsParams', 'root_section_id')
 
 
 def get_headers_with_auth(headers_dict):
