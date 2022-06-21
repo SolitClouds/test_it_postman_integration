@@ -3,9 +3,9 @@ import json
 import requests
 import os
 
-base_url = os.getenv('base_url', default='https://your-test-it')
-auth = {'Authorization': 'PrivateToken {}'.format(os.getenv('token', default='your token'))}
-project_id = os.getenv('project_id',default='your project')
+base_url = os.getenv('base_url')
+auth = {'Authorization': 'PrivateToken {}'.format(os.getenv('token'))}
+project_id = os.getenv('project_id')
 root_section_id = os.getenv('root_section_id')
 test_run_id = os.getenv('test_run_id')
 configuration_id = os.getenv('configuration_id')

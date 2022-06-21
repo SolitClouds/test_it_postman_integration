@@ -3,6 +3,7 @@ import uuid
 from pathlib import Path
 import configparser
 
+
 def generate_separate_collection(collection, base_scenario):
     """
     :param collection: source collection that includes all cases and base info

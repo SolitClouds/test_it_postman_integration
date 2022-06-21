@@ -15,6 +15,7 @@ collections_path = config.get('CollectionsParams', 'path_with_collections')
 root_section_id = config.get('TmsParams', 'root_section_id')
 test_it_base_url = config.get('TmsParams', 'test_it_base_url')
 project_id = config.get('TmsParams', 'project_id')
+token = config.get('TmsParams', 'token')
 
 
 def main():
