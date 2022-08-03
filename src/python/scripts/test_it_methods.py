@@ -188,8 +188,6 @@ def set_test_result(external_id, status, traces):
             "configurationId": configuration_id,
             "autoTestExternalId": external_id,
             "outcome": status,
-            "startedOn": "2021-09-22T08:38:45.5374963+00:00",
-            "completedOn": "2021-09-22T08:38:45.5374963+00:00",
             "traces": traces if traces is not None else ""
         }
     ]

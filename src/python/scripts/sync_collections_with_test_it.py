@@ -1,21 +1,14 @@
 import sys
 from glob import glob
 import json
-import requests
 import configparser
 
 from test_it_methods import create_work_item, update_work_item, create_section, \
-    root_section_id, create_autotest, link_autotest_to_work_item, update_autotest, get_headers_with_auth, \
-    get_sections, log_message
+    root_section_id, create_autotest, link_autotest_to_work_item, update_autotest
 
 config = configparser.ConfigParser()
 config.read('config.ini')
 collections_path = config.get('CollectionsParams', 'path_with_collections')
-root_section_id = config.get('TmsParams', 'root_section_id')
-test_it_base_url = config.get('TmsParams', 'test_it_base_url')
-project_id = config.get('TmsParams', 'project_id')
-token = config.get('TmsParams', 'token')
-
 
 def main():
     all_collections = glob('{}/*.postman_collection.json'.format(collections_path))
@@ -52,28 +45,6 @@ def main():
                     update_autotest(global_id, case_name)
 
         save_collection_to_file(collection, source_collection)
-
-
-def create_section(name, parent_section_id):
-
-    url = '{}/sections'.format(test_it_base_url)
-    body = {
-        "name": name,
-        "projectId": project_id,
-        "parentId": parent_section_id
-    }
-
-    response = requests.post(url=url, json=body, headers=get_headers_with_auth({'Content-Type': 'application/json'}))
-
-    if response.status_code == 409 and ('already exists' in response.json().get('error').get('key')):
-        sections = get_sections()
-
-        for section in sections:
-            if section.get('name') == name and section.get('parentId') == parent_section_id:
-                return section.get('id')
-
-    assert response.status_code == 201, log_message(url, response)
-    return response.json()['id']
 
 
 def case_exists(name):
